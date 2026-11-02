@@ -113,6 +113,7 @@ module tb_Tbird_Light;
     endtask
 
     // Task kiem tra ngay lap tuc (dung cho Asynchronous Reset)
+    // 1 vài trường hợp check Toggle Coverage
     task check_immediate(
         input [2:0]   exp_state,
         input [5:0]   exp_out,
