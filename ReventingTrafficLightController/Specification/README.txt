@@ -6,7 +6,7 @@ MỤC LỤC:
 2. MÔ TẢ CHI TIẾT CÁC MODULE VÀ GIAO TIẾP ĐẦU VÀO / ĐẦU RA (MODULES & PORTS)
    2.1. Top-Level Module: traffic_light_top
    2.2. Module 1: traffic_timer (Khối Datapath - Bộ đếm thời gian)
-   2.3. Module 2: state_register (Khối Control Unit - Thanh ghi trạng thái)
+   2.3. Module 2: state_register (Thanh ghi trạng thái)
    2.4. Module 3: next_state_logic (Khối Control Unit - Logic trạng thái kế tiếp)
    2.5. Module 4: output_logic (Khối Control Unit - Giải mã ngõ ra Moore)
 3. BẢNG MÃ HÓA TRẠNG THÁI (STATE ASSIGNMENT / STATE ENCODING)
@@ -53,7 +53,6 @@ SƠ ĐỒ KHỐI KIẾN TRÚC TỔNG THỂ (BLOCK DIAGRAM):
 └────────────────────────────────────────────────────────────────────────────────────────┘
 2. MÔ TẢ CHI TIẾT CÁC MODULE VÀ GIAO TIẾP ĐẦU VÀO / ĐẦU RA (MODULES & PORTS)
 2.1. Top-Level Module: traffic_light_top
---------------------------------------------------------------------------------
 Nhiệm vụ: Module bọc ngoài cùng (Wrapper), đóng gói toàn bộ hệ thống và kết nối 
 4 module con lại với nhau thành mạch hoàn chỉnh.
 

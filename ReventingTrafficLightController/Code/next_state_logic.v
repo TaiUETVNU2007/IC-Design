@@ -51,13 +51,13 @@ module next_state_logic (
             NSWAIT2: begin
                 // Đệm an toàn 1 (Safety Tick 1: Cả 2 làn cùng Đỏ)
                 Snext   = NSDELAY;     
-                TMRESET = 1'b1;        
+                TMRESET = 1'b1;  // không đếm  
             end
 
             NSDELAY: begin
                 // Đệm an toàn 2 (Safety Tick 2: Cả 2 làn cùng Đỏ)
                 Snext   = EWGO;        // Chuyển giao quyền ưu tiên sang Đông - Tây Xanh
-                TMRESET = 1'b1;        
+                TMRESET = 1'b1;    // không đếm   
             end
             EWGO: begin
                 if (~TMSHORT) begin
