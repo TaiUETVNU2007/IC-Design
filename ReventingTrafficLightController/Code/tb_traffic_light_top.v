@@ -33,6 +33,12 @@ module tb_traffic_light_top;
     // Tao xung clock he thong chu ky 10ns
     always #5 clk = ~clk;
 
+    // Xuat file waveform .vcd de xem bang GTKWave
+    initial begin
+        $dumpfile("traffic_light.vcd");
+        $dumpvars(0, tb_traffic_light_top);
+    end
+
     // Task tao 1 nhip xung 1s (dung suon duong posedge)
     task pulse_1sec;
         begin
