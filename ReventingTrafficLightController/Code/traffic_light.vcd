@@ -1,0 +1,561 @@
+$date
+	Mon Nov 09 14:24:36 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_traffic_light_top $end
+$var wire 1 ! NSYELLOW $end
+$var wire 1 " NSRED $end
+$var wire 1 # NSGREEN $end
+$var wire 1 $ EWYELLOW $end
+$var wire 1 % EWRED $end
+$var wire 1 & EWGREEN $end
+$var reg 1 ' EWCAR $end
+$var reg 1 ( NSCAR $end
+$var reg 1 ) clk $end
+$var reg 1 * en_1hz $end
+$var reg 1 + rst $end
+$scope module dut $end
+$var wire 1 ' EWCAR $end
+$var wire 1 ( NSCAR $end
+$var wire 1 ) clk $end
+$var wire 1 * en_1hz $end
+$var wire 1 + rst $end
+$var wire 1 , TMSHORT $end
+$var wire 1 - TMRESET $end
+$var wire 1 . TMLONG $end
+$var wire 3 / Sreg [2:0] $end
+$var wire 3 0 Snext [2:0] $end
+$var wire 1 ! NSYELLOW $end
+$var wire 1 " NSRED $end
+$var wire 1 # NSGREEN $end
+$var wire 1 $ EWYELLOW $end
+$var wire 1 % EWRED $end
+$var wire 1 & EWGREEN $end
+$scope module u_next_state $end
+$var wire 1 ' EWCAR $end
+$var wire 1 ( NSCAR $end
+$var wire 1 , TMSHORT $end
+$var wire 1 . TMLONG $end
+$var wire 3 1 Sreg [2:0] $end
+$var parameter 3 2 EWDELAY $end
+$var parameter 3 3 EWGO $end
+$var parameter 3 4 EWWAIT $end
+$var parameter 3 5 EWWAIT2 $end
+$var parameter 3 6 NSDELAY $end
+$var parameter 3 7 NSGO $end
+$var parameter 3 8 NSWAIT $end
+$var parameter 3 9 NSWAIT2 $end
+$var reg 3 : Snext [2:0] $end
+$var reg 1 - TMRESET $end
+$upscope $end
+$scope module u_output $end
+$var wire 1 % EWRED $end
+$var wire 1 " NSRED $end
+$var wire 3 ; Sreg [2:0] $end
+$var wire 1 ! NSYELLOW $end
+$var wire 1 # NSGREEN $end
+$var wire 1 $ EWYELLOW $end
+$var wire 1 & EWGREEN $end
+$var parameter 3 < EWDELAY $end
+$var parameter 3 = EWGO $end
+$var parameter 3 > EWWAIT $end
+$var parameter 3 ? EWWAIT2 $end
+$var parameter 3 @ NSDELAY $end
+$var parameter 3 A NSGO $end
+$var parameter 3 B NSWAIT $end
+$var parameter 3 C NSWAIT2 $end
+$upscope $end
+$scope module u_state_reg $end
+$var wire 3 D Snext [2:0] $end
+$var wire 1 ) clk $end
+$var wire 1 + rst $end
+$var parameter 3 E EWDELAY $end
+$var reg 3 F Sreg [2:0] $end
+$upscope $end
+$scope module u_timer $end
+$var wire 1 - TMRESET $end
+$var wire 1 ) clk $end
+$var wire 1 * en_1hz $end
+$var wire 1 + rst $end
+$var wire 1 , TMSHORT $end
+$var wire 1 . TMLONG $end
+$var parameter 8 G TIME_LONG $end
+$var parameter 8 H TIME_SHORT $end
+$var reg 8 I timer_count [7:0] $end
+$upscope $end
+$upscope $end
+$scope task pulse_1sec $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b101 H
+b111100 G
+b111 E
+b10 C
+b1 B
+b0 A
+b11 @
+b110 ?
+b101 >
+b100 =
+b111 <
+b10 9
+b1 8
+b0 7
+b11 6
+b110 5
+b101 4
+b100 3
+b111 2
+$end
+#0
+$dumpvars
+b0 I
+b111 F
+b0 D
+b111 ;
+b0 :
+b111 1
+b0 0
+b111 /
+0.
+1-
+0,
+1+
+0*
+0)
+0(
+0'
+0&
+1%
+0$
+0#
+1"
+0!
+$end
+#5000
+1)
+#10000
+0)
+#15000
+1)
+#20000
+0)
+0+
+#25000
+0"
+0-
+1#
+b0 /
+b0 1
+b0 ;
+b0 F
+1)
+#26000
+1'
+#30000
+0)
+#35000
+1)
+#36000
+1*
+#40000
+0)
+#45000
+b1 I
+1)
+#46000
+0*
+#50000
+0)
+#55000
+1)
+#56000
+1*
+#60000
+0)
+#65000
+b10 I
+1)
+#66000
+0*
+#70000
+0)
+#75000
+1)
+#76000
+1*
+#80000
+0)
+#85000
+b11 I
+1)
+#86000
+0*
+#90000
+0)
+#95000
+1)
+#96000
+1*
+#100000
+0)
+#105000
+b100 I
+1)
+#106000
+0*
+#110000
+0)
+#115000
+1)
+#116000
+1*
+#120000
+0)
+#125000
+1-
+b1 0
+b1 :
+b1 D
+1,
+b101 I
+1)
+#126000
+0*
+#130000
+0)
+#135000
+0-
+0,
+b0 I
+1!
+0#
+b1 /
+b1 1
+b1 ;
+b1 F
+1)
+#140000
+0)
+#145000
+1)
+#146000
+1*
+#150000
+0)
+#155000
+b1 I
+1)
+#156000
+0*
+#160000
+0)
+#165000
+1)
+#166000
+1*
+#170000
+0)
+#175000
+b10 I
+1)
+#176000
+0*
+#180000
+0)
+#185000
+1)
+#186000
+1*
+#190000
+0)
+#195000
+b11 I
+1)
+#196000
+0*
+#200000
+0)
+#205000
+1)
+#206000
+1*
+#210000
+0)
+#215000
+b100 I
+1)
+#216000
+0*
+#220000
+0)
+#225000
+1)
+#226000
+1*
+#230000
+0)
+#235000
+1-
+b10 0
+b10 :
+b10 D
+1,
+b101 I
+1)
+#236000
+0*
+#240000
+0)
+#245000
+1"
+b11 0
+b11 :
+b11 D
+1-
+0!
+b10 /
+b10 1
+b10 ;
+b10 F
+0,
+b0 I
+1)
+#250000
+0)
+#255000
+b100 0
+b100 :
+b100 D
+1-
+b11 /
+b11 1
+b11 ;
+b11 F
+1)
+#260000
+0)
+#265000
+0%
+0-
+1&
+b100 /
+b100 1
+b100 ;
+b100 F
+1)
+#266000
+1(
+#270000
+0)
+#275000
+1)
+#276000
+1*
+#280000
+0)
+#285000
+b1 I
+1)
+#286000
+0*
+#290000
+0)
+#295000
+1)
+#296000
+1*
+#300000
+0)
+#305000
+b10 I
+1)
+#306000
+0*
+#310000
+0)
+#315000
+1)
+#316000
+1*
+#320000
+0)
+#325000
+b11 I
+1)
+#326000
+0*
+#330000
+0)
+#335000
+1)
+#336000
+1*
+#340000
+0)
+#345000
+b100 I
+1)
+#346000
+0*
+#350000
+0)
+#355000
+1)
+#356000
+1*
+#360000
+0)
+#365000
+1-
+b101 0
+b101 :
+b101 D
+1,
+b101 I
+1)
+#366000
+0*
+#370000
+0)
+#375000
+0-
+0,
+b0 I
+1$
+0&
+b101 /
+b101 1
+b101 ;
+b101 F
+1)
+#380000
+0)
+#385000
+1)
+#386000
+1*
+#390000
+0)
+#395000
+b1 I
+1)
+#396000
+0*
+#400000
+0)
+#405000
+1)
+#406000
+1*
+#410000
+0)
+#415000
+b10 I
+1)
+#416000
+0*
+#420000
+0)
+#425000
+1)
+#426000
+1*
+#430000
+0)
+#435000
+b11 I
+1)
+#436000
+0*
+#440000
+0)
+#445000
+1)
+#446000
+1*
+#450000
+0)
+#455000
+b100 I
+1)
+#456000
+0*
+#460000
+0)
+#465000
+1)
+#466000
+1*
+#470000
+0)
+#475000
+1-
+b110 0
+b110 :
+b110 D
+1,
+b101 I
+1)
+#476000
+0*
+#480000
+0)
+#485000
+1%
+b111 0
+b111 :
+b111 D
+1-
+0$
+b110 /
+b110 1
+b110 ;
+b110 F
+0,
+b0 I
+1)
+#490000
+0)
+#495000
+b0 0
+b0 :
+b0 D
+1-
+b111 /
+b111 1
+b111 ;
+b111 F
+1)
+#500000
+0)
+#505000
+0"
+0-
+1#
+b0 /
+b0 1
+b0 ;
+b0 F
+1)
+#510000
+0)
+#515000
+1)
+#520000
+0)
+#525000
+1)
+#530000
+0)
+#535000
+1)
+#536000
