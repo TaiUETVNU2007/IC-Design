@@ -1,5 +1,5 @@
 module VrMPYsm (CLK , RESET , START , MAX ,SM);
-`include "VrMPYdef"
+`include "VrMPYdefs.v"
      output [1:0] SM ;
      input CLK, RESET ,START ,MAX ;
      reg [1:0] Scurrent , Sreg ;

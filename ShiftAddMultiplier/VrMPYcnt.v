@@ -1,5 +1,5 @@
 module VrMPYcnt(SM,RESET,CLK,MAX);
-`include "VrMPYdef"
+`include "VrMPYdefs.v"
        input [1:0] SM ;
        input CLK , RESET;
        output MAX;

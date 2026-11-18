@@ -1,5 +1,5 @@
 module MPYcntr(CLK,RESET,START, DONE ,SM);
-`include "VrMPYdef.v"
+`include "VrMPYdefs.v"
       input RESET , CLK , START ,DONE ;
       output reg DONE ;
       output [SMmsb, SMlsb] SM;

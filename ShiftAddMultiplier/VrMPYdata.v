@@ -1,5 +1,5 @@
 module VrMPYdata(SM,PROD,RESET,CLK,INP,START);
-`include "VrMPYdef.v"
+`include "VrMPYdefs.v"
   input RESET,CLK,START ;
   input [MPYmsb:0] INP;
   input [SMmsb , SMlsb] SM;
