@@ -1,13 +1,18 @@
-module VrMPYcnt(SM,RESET,CLK,MAX);
+module VrMPYcnt(SM, RESET, CLK, MAX);
 `include "VrMPYdefs.v"
-       input [1:0] SM ;
-       input CLK , RESET;
+       input [1:0] SM;
+       input CLK, RESET;
        output MAX;
-       reg [CNTRmsb:0] Count ;
+       reg [CNTRmsb:0] Count;
+
        always @(posedge CLK) begin
-            if(RESET) count<=0;
-            else if(SM==RUN) Count<=Count+1;
-            else Count<=0;
+            if (RESET) 
+                Count <= 0;
+            else if (SM == RUN) 
+                Count <= Count + 1'b1;
+            else 
+                Count <= 0;
        end
-       assign MAX=(Count==Maxcnt) ;
+
+       assign MAX = (Count == Maxcnt);
 endmodule
